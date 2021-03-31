@@ -74,8 +74,9 @@
       };
       document.body.appendChild(script);
     </script>	
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 	<script>
-	import bridge from '@vkontakte/vk-bridge';
+	//import bridge from '@vkontakte/vk-bridge';
 	bridge.send("VKWebAppInit", {});
 	function ShowAds() {
 	bridge.send("VKWebAppShowNativeAds", {ad_format:"preloader"})
