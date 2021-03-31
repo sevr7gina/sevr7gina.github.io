@@ -75,7 +75,14 @@
       document.body.appendChild(script);
     </script>	
 	<script src="/CatWebBuild/vkBridge.js"></script>
-	<script>vkBridge.send('VKWebAppInit');</script>
+	<script>
+		vkBridge.send('VKWebAppInit');
+		function ShowAds() {
+			vkBridge.send("VKWebAppShowNativeAds", {ad_format:"preloader"})
+			.then(data => console.log(data.result))
+			.catch(error => console.log(error));
+	}</script>
+	</script>
 	<script src="/CatWebBuild/index.js"></script>
 
   </body>
