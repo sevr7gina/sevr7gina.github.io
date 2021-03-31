@@ -75,12 +75,7 @@
       document.body.appendChild(script);
     </script>	
 	<script src="/browser.min.js"></script>
-	<script>vkBridge.send('VKWebAppInit');
-	function ShowAds() {
-	bridge.send("VKWebAppShowNativeAds", {ad_format:"preloader"})
-	.then(data => console.log(data.result))
-	.catch(error => console.log(error));
-	}</script>
+	<script>vkBridge.send('VKWebAppInit');</script>
 	<script src="/index.js"></script>
 
   </body>
