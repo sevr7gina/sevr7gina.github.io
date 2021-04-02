@@ -8,6 +8,8 @@ function ShowAds() {
       // API initialization succeeded
       // Your code here
 	  //VK.callMethod('showSettingsBox', 256);
+	  var user_id = null;   // user's id
+    var app_id = 7781392;  // your app's id
 	  admanInit({
       user_id: user_id,
       app_id: 7781392,
