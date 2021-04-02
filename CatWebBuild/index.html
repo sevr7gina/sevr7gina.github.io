@@ -108,7 +108,8 @@
     function onAdsReady(adman) {
       adman.onStarted(function () {});
       adman.onCompleted(function() {
-	  VK.callMethod('showSettingsBox', 256);
+	  //VK.callMethod('showSettingsBox', 256);
+	  VK.callMethod('showShareBox', 'ololo', 'https://trello-attachments.s3.amazonaws.com/5fb5722e95c2f5057e755373/6065b3ba6a47230e9b8106fe/2d6980517697ded24dc610ea47c81606/image.png', 'wall' );
 	  });          
       adman.onSkipped(function() {
 	  //VK.callMethod('showSettingsBox', 256);
