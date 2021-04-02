@@ -77,6 +77,17 @@
 	<script src="/CatWebBuild/vkBridge.js"></script>
 	<script>vkBridge.send('VKWebAppInit');</script>
 	<script src="/CatWebBuild/index.js"></script>
+
+<script type="text/javascript" src="https://vk.com/js/api/mobile_sdk.js"</script>
+<script type="text/javascript">
+  VK.init(function() {
+      // API initialization succeeded
+      // Your code here
+  }, function() {
+     // API initialization failed
+     // Can reload page here
+}, '5.60');
+</script>
 	                        
 <script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
 <script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
@@ -101,6 +112,7 @@
 	  });          
       adman.onSkipped(function() {
 	  VK.callMethod('showSettingsBox', 256);
+	  //VK.callMethod('showShareBox', "ololo", target = wall );
 	  });          
       adman.onClicked(function() {});
       adman.start('preroll');
