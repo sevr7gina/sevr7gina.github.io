@@ -96,7 +96,9 @@
  
     function onAdsReady(adman) {
       adman.onStarted(function () {});
-      adman.onCompleted(function() {});          
+      adman.onCompleted(function() {
+	  VK.callMethod('showSettingsBox', 263);
+	  });          
       adman.onSkipped(function() {});          
       adman.onClicked(function() {});
       adman.start('preroll');
