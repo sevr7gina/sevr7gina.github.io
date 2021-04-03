@@ -7,6 +7,6 @@ function ShowAds() {
 	
 	vkBridge.send("VKWebAppShowWallPostBox", {
   "message": "Hello!",
-  "attachments": "https://vk.com/app7781392"
+  "attachments": "photo275324683_457240214","https://vk.com/app7781392"
 });
 	}	
