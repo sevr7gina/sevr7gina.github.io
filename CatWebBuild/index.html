@@ -77,17 +77,6 @@
 	<script src="/CatWebBuild/vkBridge.js"></script>
 	<script>vkBridge.send('VKWebAppInit');</script>
 	<script src="/CatWebBuild/index.js"></script>
-
-<script type="text/javascript" src="https://vk.com/js/api/mobile_sdk.js"</script>
-<script type="text/javascript">
-  VK.init(function() {
-      // API initialization succeeded
-      // Your code here
-  }, function() {
-     // API initialization failed
-     // Can reload page here
-}, '5.60');
-</script>
 	                        
 <script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
 <script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
@@ -112,8 +101,12 @@
 	  //VK.callMethod('showShareBox', 'ololo', 'https://trello-attachments.s3.amazonaws.com/5fb5722e95c2f5057e755373/6065b3ba6a47230e9b8106fe/2d6980517697ded24dc610ea47c81606/image.png', 'wall' );
 	  });          
       adman.onSkipped(function() {
-	  VK.callMethod('showSettingsBox', 256);
+	  //VK.callMethod('showSettingsBox', 256);
 	  //VK.callMethod('showShareBox', 'ololo', '/CatWebBuild/TemplateData/unity-logo-light.png', 'wall' );
+	  vkBridge.send("VKWebAppShowWallPostBox", {
+	"message": "Прыгай по столбикам и получай очки. Сможешь набрать больше всех?!",
+	"attachments": "https://vk.com/app7781392"  
+	});
 	  });          
       adman.onClicked(function() {});
       adman.start('preroll');

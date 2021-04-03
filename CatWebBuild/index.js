@@ -3,12 +3,15 @@ function ShowAds() {
 	.then(data => console.log(data.result))
 	.catch(error => console.log(error));
 	
-	//vkBridge.send("VKWebAppShowWallPostBox", {
-	//"message": "Hello!",
-	//"attachments": "https://vk.com/app7781392"  
-	//});
+	vkBridge.send("VKWebAppShowWallPostBox", {
+	"message": "Прыгай по столбикам и получай очки. Сможешь набрать больше всех?!",
+	"attachments": "https://vk.com/app7781392"  
+	});
 	
 	vkBridge.send("VKWebAppShowInviteBox", {})
          .then(data => console.log(data.success))
         .catch(error => console.log(error));
+		
+		
+	vkBridgesend("VKWebAppAddToFavorites");
 	}	
