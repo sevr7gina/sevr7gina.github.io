@@ -87,17 +87,22 @@
     var user_id = null;   // user's id
     var app_id = 7781392;  // your app's id
  
+	setTimeout(function () {
+	
     admanInit({
       user_id: user_id,
       app_id: 7781392,
       type: 'preloader'         // 'preloader' or 'rewarded' (default - 'preloader')
       // params: {preview: 1}   // to verify the correct operation of advertising
     }, onAdsReady, onNoAds);
+	
+	}, 5000);
  
     function onAdsReady(adman) {
       adman.onStarted(function () {});
       adman.onCompleted(function() {
-	  //VK.callMethod('showSettingsBox', 256);
+	  //to show pop up for adding game to left menu (favourites)
+	  VK.callMethod('showSettingsBox', 256);
 	  });          
       adman.onSkipped(function() {
 	  //VK.callMethod('showSettingsBox', 256);
