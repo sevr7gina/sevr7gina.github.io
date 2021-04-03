@@ -8,9 +8,9 @@ function ShowAds() {
 	"attachments": "https://vk.com/app7781392"  
 	});
 	
-	vkBridge.send("VKWebAppShowInviteBox", {})
-         .then(data => console.log(data.success))
-        .catch(error => console.log(error));
+	//vkBridge.send("VKWebAppShowInviteBox", {})
+    //     .then(data => console.log(data.success))
+    //    .catch(error => console.log(error));
 		
 		
 	vkBridge.send("VKWebAppAddToFavorites");
