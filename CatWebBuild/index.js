@@ -13,5 +13,5 @@ function ShowAds() {
         .catch(error => console.log(error));
 		
 		
-	vkBridgesend("VKWebAppAddToFavorites");
+	vkBridge.send("VKWebAppAddToFavorites");
 	}	
