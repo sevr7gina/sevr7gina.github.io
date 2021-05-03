@@ -48,8 +48,8 @@
         config.devicePixelRatio = 1;
         
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "75vw";
+        canvas.style.height = "75wh";
       }
       loadingBar.style.display = "block";
 
@@ -105,6 +105,13 @@
     function onNoAds() {};
   });
 </script>
-    
+<script>
+var lockFunction =  window.screen.orientation.lock;
+if (lockFunction.call(window.screen.orientation, 'landscape')) {
+           console.log('Orientation locked')
+} else {
+            console.error('There was a problem in locking the orientation')
+}
+</script>    
   </body>
 </html>
