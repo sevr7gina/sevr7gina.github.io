@@ -5,7 +5,7 @@ function ShowAds() {
 	.catch(error => console.log(error));
 	
 	//show pop up for adding app to favorites on web/mobile	
-	vkBridge.send("VKWebAppAddToFavorites");
+	//vkBridge.send("VKWebAppAddToFavorites");
 	}	
 	
 function ShowWallPostBox() {
@@ -22,4 +22,10 @@ function ShowInviteBox() {
     .then(data => console.log(data.success))
     .catch(error => console.log(error));
 	}
-	
+
+function ShowLeaderBoardBox() {	
+	//show pop with result and sharing
+	vkBridge.send("VKWebAppShowLeaderBoardBox", {user_result:100})
+         .then(data => console.log(data.success))
+        .catch(error => console.log(error));
+}
