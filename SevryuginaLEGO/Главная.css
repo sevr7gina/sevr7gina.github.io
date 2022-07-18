@@ -65,7 +65,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 180deg;
   --animation-custom_in-scale: 0.3;
-  background-image: url("images/photo_2022-07-10_14-07-232.jpg");
+  background-image: url("images/photo_2022-07-18_15-50-283.jpg");
   background-position: 50% 50%;
   margin: -73px 0 60px auto;
 }
@@ -1988,7 +1988,6 @@
 .u-section-6 .u-group-1 {
   width: calc(((100% - 1140px) / 2) + 676px);
   min-height: 653px;
-  height: auto;
   margin: 38px 0 0 auto;
 }
 
@@ -2079,7 +2078,6 @@
     width: 726px;
     margin-top: 47px;
     margin-right: calc(((100% - 940px) / 2) + -189px);
-    height: auto;
   }
 
   .u-section-6 .u-image-2 {
@@ -2723,7 +2721,6 @@
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
   width: 661px;
-  height: auto;
   margin: 198px auto 0 113px;
 }
 
@@ -2752,16 +2749,12 @@
   width: 361px;
   height: 361px;
   object-position: 0% 50%;
-  background-image: url("images/photo_2022-07-10_14-41-45.jpg");
+  background-image: url("images/photo_2022-07-18_15-50-282.jpg");
   background-position: 50% 50%;
   margin: -462px 155px 102px auto;
 }
 
 @media (max-width: 1199px) {
-  .u-section-11 .u-group-1 {
-    height: auto;
-  }
-
   .u-section-11 .u-image-1 {
     width: 306px;
     height: 306px;
